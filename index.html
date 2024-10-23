@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Home</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        menu {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 15px;
+        }
+
+        menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+
+        menu a:hover {
+            color: #ffcc00;
+        }
+
+        main {
+            flex: 1;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1, h4 {
+            margin: 0;
+        }
+
+        .center-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            max-width: 800px;
+        }
+
+        .center-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            margin-top: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .center-container img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        section p {
+            max-width: 600px;
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            width: 100%;
+            margin-top: auto;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        hr {
+            border: none;
+            height: 1px;
+            background-color: #ddd;
+            margin: 20px 0;
+            width: 80%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Umut Portfolio Website</h1>
+        <menu>
+            <a href="index.html">Home</a> |
+            <a href="project.html">Project</a> |
+            <a href="contact.html">Contact</a>
+        </menu>
+    </header>
+
+    <main>
+        <hr />
+        <h4>Welcome to My Website</h4>
+        <div class="center-container">
+            <p>This is my portfolio website. This is my web project and I want to share them with you.</p>
+            <img src="img/image.png" alt="Portfolio Image" />
+        </div>
+        <section>
+            <h4>My Biography</h4>
+            <p>I’m a beginner programmer. I use HTML, CSS, C#, and JavaScript for my projects.</p>
+        </section>
+    </main>
+
+    <footer>
+        <hr />
+        Copyright 2024
+    </footer>
+</body>
+
+</html>

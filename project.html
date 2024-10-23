@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Home</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        menu {
+            display: flex;
+            justify-content: center;
+            margin-top: 15px;
+        }
+
+        menu a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+
+        menu a:hover {
+            color: #ffcc00;
+        }
+
+        main {
+            flex: 1;
+            padding: 40px 20px;
+        }
+
+        h1, h4 {
+            margin: 0;
+        }
+
+        hr {
+            border: none;
+            height: 1px;
+            background-color: #ddd;
+            margin: 20px 0;
+            width: 80%;
+        }
+
+        /* Project Section with CSS Grid */
+        .project-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+
+        .project {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .project:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .project img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .project h4 {
+            margin-bottom: 10px;
+        }
+
+        .project p {
+            line-height: 1.6;
+            color: #555;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: auto;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Umut Portfolio Website</h1>
+        <menu>
+            <a href="index.html">Home</a> |
+            <a href="project.html">Project</a> |
+            <a href="contact.html">Contact</a>
+        </menu>
+    </header>
+
+    <main>
+        <hr />
+        <h4 class="center">These are my recent projects</h4>
+        <section class="project-container">
+            <div id="s1" class="project">
+                <h4>Project 1</h4>
+                <img src="img/project1.png" alt="Project 1 Image" />
+                <p>In this project, I created a form where you can write your name, surname, date of birth, gender, language, and hobbies.</p>
+                <p>This project includes HTML, CSS.</p>
+            </div>
+
+            <div id="s2" class="project">
+                <h4>Project 2</h4>
+                <img src="img/project2.png" alt="Project 2 Image" />
+                <p>In this project, I created a bank account manager.</p>
+                <p>This project includes C#.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <hr />
+        Copyright 2024
+    </footer>
+</body>
+
+</html>
